@@ -20,7 +20,7 @@ a:hover {
   width: 70%;
   padding: 20px;
   background-color: #e0eff4;
-  border: none;
+  border: 1px solid #e6af57;
   border-radius: 16px;
   font-size: 16px;
   color: #2a5a82;
