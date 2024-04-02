@@ -6,9 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App</title>
   </head>
@@ -28,25 +29,29 @@
 
       <main>
         <img src="" alt="" />
-        <h1>20°C</h1>
-        <h2>Broken clouds</h2>
-        <div class="condition">
-          <div>
-            <span
-              ><img src="images/bx-water.svg" alt="" />60% <br />
-              Humidity</span
-            >
-          </div>
-          <div>
-            <span
-              ><img src="images/bx-wind.svg" alt="" />2km/h <br />
-              Wind Speed</span
-            >
-          </div>
-        </div>
+
+        <h2 class="current-location">
+          <img src="images/bxs-map.svg" alt="" />Johannesburg, South Africa
+        </h2>
+        <h2 class="description">Mostly Cloudy</h2>
+
+        <p>
+          feels like 30° <br />
+          friday, 16:19
+        </p>
+        <p class="description">
+          Humidity: <strong>60%</strong> | Wind Speed: <strong>2km/h</strong>
+        </p>
+        <h1 class="current-temp">
+          <span class="icon">☀️</span> 20<span class="unit">°C</span>
+        </h1>
       </main>
 
-      <footer>This page was coded by <a href="">Sisanda Mthabela</a></footer>
+      <footer>
+        This page was created by <a href="">Sisanda Mthabela</a> and is
+        open-sourced on <a href="">github</a> and hosted on
+        <a href="">Netlify</a>
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
