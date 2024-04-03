@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +23,14 @@
             placeholder="Enter your location..."
             required
             class="search-input"
+            id="search-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
 
@@ -31,25 +38,30 @@
         <img src="" alt="" />
 
         <h2 class="current-location">
-          <img src="images/bxs-map.svg" alt="" />Johannesburg, South Africa
+          <img src="images/bxs-map.svg" alt="" /><span id="current-location"
+            >Johannesburg</span
+          >
         </h2>
-        <h2 class="description">Mostly Cloudy</h2>
+        <h2 class="description">
+          <span id="day-time">Friday, 16:19 </span><br />
+          <span id="condition">Mostly Cloudy</span>
+        </h2>
 
-        <p>
-          feels like 30° <br />
-          Friday, 16:19
-        </p>
         <p class="description">
           Humidity: <strong>60%</strong> | Wind Speed: <strong>2km/h</strong>
         </p>
+        <p class="feels-like">Feels like 30°</p>
         <h1 class="current-temp">
           <span class="icon">☀️</span> 20<span class="unit">°C</span>
         </h1>
       </main>
 
       <footer>
-        This page was created by <a href="">Sisanda Mthabela</a> and is
-        open-sourced on <a href="">github</a> and hosted on
+        This page was created by
+        <a href="https://github.com/sisandamthabela" target="_blank"
+          >Sisanda Mthabela</a
+        >
+        and is open-sourced on <a href="">github</a> and hosted on
         <a href="">Netlify</a>
       </footer>
     </div>
