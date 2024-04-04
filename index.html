@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="text"
             placeholder="Enter your location..."
@@ -38,9 +38,7 @@
         <img src="" alt="" />
 
         <h2 class="current-location">
-          <img src="images/bxs-map.svg" alt="" /><span id="current-location"
-            >Johannesburg</span
-          >
+          <img src="images/bxs-map.svg" alt="" /><span id="current-city"></span>
         </h2>
         <h2 class="description">
           <span id="day-time">Friday, 16:19 </span><br />
@@ -48,12 +46,21 @@
         </h2>
 
         <p class="description">
-          Humidity: <strong>60%</strong> | Wind Speed: <strong>2km/h</strong>
+          Humidity: <strong id="humidity">60%</strong> | Wind Speed:
+          <strong id="wind">2km/h</strong>
         </p>
-        <p class="feels-like">Feels like 30°</p>
-        <h1 class="current-temp">
-          <span class="icon">☀️</span> 20<span class="unit">°C</span>
-        </h1>
+        <p class="feels-like" id="feels-like">Feels like 30°</p>
+        <div class="temp-icon">
+          <div class="icon" id="icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              alt=""
+            />
+          </div>
+          <h1 class="current-temp" id="current-temp">
+            20<span class="unit">°C</span>
+          </h1>
+        </div>
       </main>
 
       <footer>
