@@ -44,17 +44,11 @@ a:hover {
   opacity: 0.7;
 }
 
-.current-temp {
-  font-size: 88px;
-  margin: 20px 0;
-  color: #2a5a82;
-  text-align: center;
-}
 .unit {
   font-size: 30px;
   margin: 0;
-  position: fixed;
-  top: 340px;
+  position: relative;
+  top: -46px;
 }
 .current-location {
   font-size: 30px;
@@ -96,6 +90,25 @@ p {
   max-width: 50%;
 }
 
+.current-temp {
+  font-size: 98px;
+  margin: 20px 0;
+  color: #2a5a82;
+  margin-left: -10px;
+}
+.icon {
+  padding: 10px;
+}
+.icon img {
+  width: 200px;
+  height: auto;
+  margin-top: -42px;
+}
+
+.temp-icon {
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: block;
   margin: 30px auto;
