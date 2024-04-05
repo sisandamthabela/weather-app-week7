@@ -62,7 +62,7 @@ searchCity("Ixopo");
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  let days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
   return days[date.getDay()];
 }
 
