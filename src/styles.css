@@ -152,4 +152,5 @@ p {
   background-color: #e6f5fa;
   border: 2px solid #e6af57;
   border-radius: 10px;
+  box-shadow: 5px 7px 27px rgba(0, 0, 0, 0.2);
 }
